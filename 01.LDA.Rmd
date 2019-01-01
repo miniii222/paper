@@ -1,0 +1,88 @@
+---
+title: "LDA"
+output: word_document
+---
+###LDA
+LDA:Linear Discriminant Analysis
+**가정
+1.Multi-Normal
+2.Class means are different
+3.comman variance Marix -> all Xi numeric
+  (if, covariance matrix가 다 다르면, QDA)
+```{R}
+library(MASS)
+lda1<-lda(Species~., data=iris)
+lda1
+
+plot(lda1)
+plot(lda1, col=as.integer(iris$Species))
+plot(lda1, col=rep(4:6, each=50))
+plot(lda1, panel=function(x,y, ...)points(x,y,...), col=as.integer(iris$Species),pch=20)
+plot(lda1, panel=function(x,y, ...)points(x,y,...), col=as.integer(iris$Species),pch=as.integer(iris$Species), main="LDA plot for iris data")
+legend(7,-1,levels(iris$Species),pch=1:3,col=1:3)
+```
+
+###predict
+predict.lda는 class, posterior, x 세 가지 종류의 값들로 나온다.
+```{r}
+lda1.pred<-predict(lda1,iris)
+head(lda1.pred$class)
+head(lda1.pred$posterior)
+head(lda1.pred$x)
+```
+class:어느 그룹으로 분류되었는지
+posterior:새로운 data가 들어왔을 때 각 클래스에 속할 확률
+x:plot을 그렸을 때 각 점들이 찍힐 좌표.
+
+###Misclassfication Probability
+```{r}
+ifelse(lda1.pred$class!=iris$Species,1,0)
+mean(ifelse(lda1.pred$class!=iris$Species,1,0))
+plot(lda1.pred$class, iris$Species)
+table(iris$Species, lda1.pred$class)
+```
+###qda
+```{r}
+qda1<-qda(Species~., data=iris)
+qda1
+qda1.pred<-predict(qda1, iris)
+table(iris$Species, qda1.pred$class)
+```
+
+###cv.error
+```{r}
+p<-0.7
+sim.n<-100
+n<-nrow(iris)
+
+res<-matrix(0,nrow=sim.n, ncol=2)
+
+for(i in 1:sim.n){
+	
+	train.index<-sample(n,n*p)
+	train.data<-iris[train.index,]
+	test.data<-iris[-train.index,]
+
+	lda1<-lda(Species~., data=train.data)
+	qda1<-qda(Species~., data=train.data)
+
+	lda1.pred<-predict(lda1, test.data)
+	qda1.pred<-predict(qda1, test.data)
+
+	lda1.mr<-mean(ifelse(lda1.pred$class!=test.data$Species,1,0))
+	qda1.mr<-mean(ifelse(qda1.pred$class!=test.data$Species,1,0))
+
+	res[i,1]<-lda1.mr
+	res[i,2]<-qda1.mr
+
+}
+
+
+head(res)
+colMeans(res)
+
+```
+보통 lda의 성능이 qda보다 좋다.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
