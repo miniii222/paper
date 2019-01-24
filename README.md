@@ -6,3 +6,7 @@ Papers
 * gam 모델을 이용한 zero inflated count data
 * stem counts for a Eucalypt species in South East Australia
 * 
+
+2. Structural equation modeling in medical research: a primer
+* 구조방정식에 대한 기본적인 정의 및 절차 설명
+* 간단한 예시를 통한 
