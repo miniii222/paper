@@ -20,3 +20,7 @@ Papers
   - FS0와 Lasso의 performance자체는 비슷하다.
 * [lars 및 FS R package 참고](https://cran.r-project.org/web/packages/lars/lars.pdf)
 * [python 패키지 챀고](https://github.com/bbalasub1/glmnet_python/blob/master/test/glmnet_examples.ipynb)
+  - predictor들이 이미 데이터 안에서 정의된 경우 grouped lasso를 사용한다. group이 함께 선택되고, 사라진다.
+  
+  ![](https://github.com/miniii222/papers-summary/blob/master/grouped_lasso.JPG "grouped_lasso")
+  - non-zero coefficietns의 bias를 막기 위해 relaxed lasso, SCAD lasso 등을 사용한다.
