@@ -11,3 +11,6 @@ Papers
 * 구조방정식에 대한 기본적인 정의 및 절차 설명
 * 간단한 예시를 통한 적용
 
+3. More on the Lasso and Related path Algorithms
+
+* https://cran.r-project.org/web/packages/lars/lars.pdf
