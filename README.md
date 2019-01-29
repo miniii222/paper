@@ -19,3 +19,4 @@ Papers
   - FS0는 Lasso와 비슷하지만, 더 복잡하다. 하지만, path는 arc-length에 영향을 받기 때문에 더 간단하다.
   - FS0와 Lasso의 performance자체는 비슷하다.
 * [lars 및 FS R package 참고](https://cran.r-project.org/web/packages/lars/lars.pdf)
+* [python 패키지 챀고](https://github.com/bbalasub1/glmnet_python/blob/master/test/glmnet_examples.ipynb)
