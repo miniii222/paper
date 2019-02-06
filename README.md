@@ -24,3 +24,5 @@ Papers
   
   ![](https://github.com/miniii222/papers-summary/blob/master/More_on_the_Lasso/grouped_lasso.JPG "grouped_lasso")
   - non-zero coefficietns의 bias를 막기 위해 relaxed lasso, SCAD lasso 등을 사용한다.
+  
+ ## 4. More on the Lasso and Related path Algorithms(ESL2 5.1-5.4)
