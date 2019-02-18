@@ -34,3 +34,7 @@ Papers
 #### Smoothing splines
 - knots의 개수를 정하지 않고, 모든 점을 knots로 가정
 - RSS를 최소로 하는 람다를 구하는 방식
+
+## 5. EM algorithm and Ensemble(ESL2 5.1-5.4)
+- 
+- Ensemble : bagging, boosting, stacking
