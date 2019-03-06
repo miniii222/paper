@@ -11,7 +11,9 @@ Papers
 * 구조방정식에 대한 기본적인 정의 및 절차 설명
 * 간단한 예시를 통한 적용
 
-## 3. More on the Lasso and Related path Algorithms(ESL2 3.8)
+
+# ESL2 (The Elements of Statistical Learning)
+## 1. More on the Lasso and Related path Algorithms(ESL2 3.8)
 #### Forward Stagewise Regression
   - Algorithm
   
@@ -25,7 +27,7 @@ Papers
   ![](https://github.com/miniii222/papers-summary/blob/master/More_on_the_Lasso/grouped_lasso.JPG "grouped_lasso")
   - non-zero coefficietns의 bias를 막기 위해 relaxed lasso, SCAD lasso 등을 사용한다.
   
- ## 4. Piecewise Polynomials and Splines(ESL2 5.1-5.4)
+ ## 2. Piecewise Polynomials and Splines(ESL2 5.1-5.4)
 #### Piecewise Polynomials and Splines
 - 직선으로 fitting할 수 없는 function을 구간을 나눠서 구간별 sub-function으로 fitting
 - constant, linear 여러 방법
@@ -35,6 +37,9 @@ Papers
 - knots의 개수를 정하지 않고, 모든 점을 knots로 가정
 - RSS를 최소로 하는 람다를 구하는 방식
 
-## 5. EM algorithm and Ensemble(ESL2 5.1-5.4)
+## 3. EM algorithm and Ensemble(ESL2 5.1-5.4)
 - 
 - Ensemble : bagging, boosting, stacking
+
+## 4. Tree Boosting(ESL2 10.9-)
+
