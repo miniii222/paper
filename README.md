@@ -42,4 +42,7 @@ Papers
 - Ensemble : bagging, boosting, stacking
 
 ## 4. Tree Boosting(ESL2 10.9-)
-- 참고 [link](https://xgboost.readthedocs.io/en/latest/tutorials/model.html) : xgboost 문서
+#### 참고 link
+- [xgboost document](https://xgboost.readthedocs.io/en/latest/tutorials/model.html) : 공식 xgboost 문서
+- [xgboost 설명 블로그 ](https://brunch.co.kr/@snobberys/137) : 설명이 아주 좋다!
+-
