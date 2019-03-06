@@ -45,4 +45,3 @@ Papers
 #### 참고 link
 - [xgboost document](https://xgboost.readthedocs.io/en/latest/tutorials/model.html) : 공식 xgboost 문서
 - [xgboost 설명 블로그 ](https://brunch.co.kr/@snobberys/137) : 설명이 아주 좋다!
--
