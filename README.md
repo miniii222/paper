@@ -45,3 +45,6 @@ Papers
 #### 참고 link
 - [xgboost document](https://xgboost.readthedocs.io/en/latest/tutorials/model.html) : 공식 xgboost 문서
 - [xgboost 설명 블로그 ](https://brunch.co.kr/@snobberys/137) : 설명이 아주 좋다!
+
+## 5. Choosing a point from the surface of a shape
+- 논문 [link](https://projecteuclid.org/download/pdf_1/euclid.aoms/1177692644)
