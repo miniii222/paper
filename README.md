@@ -48,3 +48,7 @@ Papers
 
 ## 5. Choosing a point from the surface of a shape
 - 논문 [link](https://projecteuclid.org/download/pdf_1/euclid.aoms/1177692644)
+- 차원이 커져도 unit sphere on the surface 의 점들을 발생시키는 방법을 소개하는 논문.
+- 차원의 저주에 의해 단 1%밀도의 점들도 굉장히 표면근처로 몰려 있기 때문에 sphere내부의 점들을 발생하는 것은 쉽지 않다.
+- 2번 방법을 이용하면, 내부의 점들도 쉽게 발생시킬 수 있다.
+
