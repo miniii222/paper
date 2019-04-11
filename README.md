@@ -11,6 +11,21 @@ Papers
 * 구조방정식에 대한 기본적인 정의 및 절차 설명
 * 간단한 예시를 통한 적용
 
+## 3. [LIghtGBM : A Highly Efficient Gradient Boosting Decision Tree](https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf)
+
+1. Histogram-based methods(XGboost and lightGBM)
+- By grouping features into a set of bins and perform splitting on the bins instead of the features
+
+2. Ignoring sparse inputs(XGboost and lightGBM)
+- Sparse data에서 split할 때, 우선 0의 값을 무시한 다음 split후, 손실을 줄이는 쪽으로 다시 할당
+
+3. Subsmapling the data : Gradient-based One-side Sampling(GOSS) (lightGBM)
+- Increase the weight of the samples with small gradients when computing their contribution to the change in loss(like importance sampling)
+
+4. Exclusive Feature Bundling(lightGBM)
+- Safely bundle exclusive features into a single feature(called exclusive feature bundle)
+
+
 
 # ESL2 (The Elements of Statistical Learning)
 ## 1. More on the Lasso and Related path Algorithms(ESL2 3.8)
